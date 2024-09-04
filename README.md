@@ -34,7 +34,7 @@ The Message should be as in the image below.
 
 ![Expected failed test result](Readme/devenv_LshCCeDLoo.png)
 
-## What happened in `UpdateEntities_ChangedPropertiy_ExcludeFromUpdate`:
+## What happened in `UpdateEntities_ChangedProperty_ExcludeFromUpdate`:
 * N new entities written to the empty database
 * then N new entities with the same IDs but other values are used to update the existing entities using the **`BulkUpdate NuGet-package`**
 * from these "update entities" only one property is set up to actually being updated 
