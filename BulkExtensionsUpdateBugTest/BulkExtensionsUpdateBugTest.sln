@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkExtensionsUpdateBugTest", "BulkExtensionsUpdateBugTest\BulkExtensionsUpdateBugTest.csproj", "{B5BA2D63-64A7-429E-9456-3F5F2D819467}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5BA2D63-64A7-429E-9456-3F5F2D819467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BA2D63-64A7-429E-9456-3F5F2D819467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BA2D63-64A7-429E-9456-3F5F2D819467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BA2D63-64A7-429E-9456-3F5F2D819467}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8826E7D-A2C6-42F2-B505-214BE823078F}
+	EndGlobalSection
+EndGlobal
