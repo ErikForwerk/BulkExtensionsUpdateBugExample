@@ -1,5 +1,22 @@
 # BulkExtensionsUpdateBugExample
 
+## Setup
+
+
+
+Adjust the settings in the file `GlobalExampleConfig.cs` to your needs.
+```CSharp
+internal static class GlobalExampleConfig
+{
+	public static string USERNAME { get; }	= "<Your Username Here>";
+	public static string PASSWORD { get; }	= "<Your Password Here>";
+}
+```
+
+
+
+## Tests
+
 **This bug happens in the MySQL implementation of the BulkExtensions package.**
 
 
@@ -16,7 +33,7 @@ The Message should be as in the image below.
 
 ![Expected failed test result](Readme/devenv_LshCCeDLoo.png)
 
-### What happened in `UpdateEntities_ChangedPropertiy_ExcludeFromUpdate`:
+## What happened in `UpdateEntities_ChangedPropertiy_ExcludeFromUpdate`:
 * N new entities written to the empty database
 * then N new entities with the same IDs but other values are used to update the existing entities using the **`BulkUpdate NuGet-package`**
 * from these "update entities" only one property is set up to actually being updated 
@@ -29,7 +46,7 @@ ctx.BulkUpdate(updateEntities, options =>
  
 * the test shows (and therefore fails) that both properties were updated
 
-### Other Notes
+## Other Notes
 * the MS-SQL implementation works fine
 * there are multiple different, similar options (PropertiesToExclude, PropertiesToExcludeOnUpdate, PropertiesToInclude, PropertiesToIncludeOnUpdate), non of which worked for MySQL
 * I did not find another option to influence that given update behavior (for MySQL)
